@@ -1,10 +1,4 @@
-FROM alpine:
-LABEL org.opencontainers.image.base.name="alpine:${ALPINE_VER}"
-LABEL org.opencontainers.image.description DESCRIPTION
-LABEL org.opencontainers.image.licenses=GPL-3.0
-LABEL org.opencontainers.image.source=https://github.com/tmknight/docker-privoxy
-LABEL org.opencontainers.image.title=privoxy
-LABEL autoheal=true
+FROM alpine
 ENV CONFFILE=/etc/privoxy/config \
   PIDFILE=/var/run/privoxy.pid \
   PRIVOXY_VERSION=4.0.0
